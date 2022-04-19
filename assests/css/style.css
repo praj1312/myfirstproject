@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: tomato;
+}
+.nav-links a{
+    color: white;
+}
+.nav-links a:hover{
+    color: #49d806;
+}
+.logo{
+    font-size: 25px;
+}
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li a :hover{
+    color: white;
+    border-radius: 6px;
+    
+}
+
+.menu li{
+    padding: 5px 15px;
+}
+input[type=checkbox]{
+    display: none;
+}
+
+.navbar_icon{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media(max-width:768px){
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: tomato;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+   .menu li:hover{
+        display: inline-block;
+        background-color: tomato;
+        transition: 0.3s ease;
+    }
+    .menu li+li{
+        margin-top: 12px;
+
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .navbar_icon{
+        display: block;
+    } 
+}
+
+/*****/
+
+.flex-container {
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 18px 18px;
+  }
+  
+  .left {
+    padding: 25px;
+    flex: 50%;
+    margin-top: 60px;
+  }
+  .left .heading {
+    font-family: 'Rubik Wet Paint', cursive;
+  }
+  
+  .right {
+    padding: 10px;
+    flex: 50%;
+  }
+  .img-fluid{
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+  }
+  .img-fluid:hover{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .btn{
+    margin-top: 30px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .btn:hover{
+      background-color: tomato;
+  }
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .heading{
+      color: #49d806;
+    }
+   
+  }
+/**respiratory page**/
+
+.right6{
+  padding: 10px;
+  flex: 50%;
+}
+.left6{
+  padding: 10px;
+  flex: 50%;
+}
+  .featherimg{
+    width: 100%;
+    height: auto;
+  }
+  #beakes{
+    background-color:antiquewhite;
+  }
+
+
+  /****/
+  .About{
+  
+      text-align: justify;
+      margin-top: 20px;
+     
+      
+  }
+  .about-text{
+      padding: 35px 35px;
+      font-size: 18px;
+      
+  }
+  #skeleton{
+background-color: rgb(197, 132, 35);
+
+  }
+  #skeleton1{
+    background-color: thistle;
+  }
+ 
+/****services**/
+.Services{
+  background-color: silver;
+    display: flex;
+    padding: 35px 35px;
+  font-size: 30px;
+  text-align: center;
+}
+.service-left{
+   
+    padding: 10px;
+    flex: 50%;
+}
+.service-center{
+   
+    padding: 10px;
+    flex: 50%;
+}
+.service-right{
+  
+    padding: 10px;
+    flex: 50%;
+}
+.services-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+}
+@media (max-width: 800px) {
+    .Services {
+      flex-direction: column;
+    }
+  }
+
+  /****card***/
+  .row{
+    padding: 35px 35px;
+  }
+.column {
+    text-align: justify;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px 15px;
+    margin: 10px 10px;
+    text-align: justify;
+    line-height: 20px;
+
+    background-color: #f1f1f1;
+  }
+  .row2{
+      margin-top: 30px;
+  }
+  .navbar1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(197, 25, 151);
+}
+.logo1{
+  font-size: 25px;
+  color: violet;
+  
+}
+
+.flex-container1 {
+  display: flex;
+  text-align: justify;
+  font-size: 20px;
+  flex-direction: row;
+  margin-top: 40px;
+  padding: 18px 18px;
+}
+/****/
+@media(max-width:600px){
+.flex-container1{
+flex-direction: column;}
+.logo1{
+  color:yellow;
+}
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+   
+  }
+
+
+
+
+.nav-links1 a{
+  color: white;
+}
+.nav-links1 a:hover{
+  color: #49d806;
+}
+.logo1{
+  font-size: 25px;
+}
+.menu1{
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu1 li a :hover{
+  color: white;
+  border-radius: 6px;
+  
+}
+.abc{
+font-size:xx-large;
+color: crimson;
+font-family: cursive;
+
+
+}
+.heading1{
+font-size: xx-large;
+color: #49d806;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+@media(max-width:768px){
+  .menu1{
+      display: none;
+      position: absolute;
+      background-color: tomato;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+  }
+ .menu1 li:hover{
+      display: inline-block;
+      background-color: tomato;
+      transition: 0.3s ease;
+  }
+  .menu1 li+li{
+      margin-top: 12px;
+
+  }
+  input[type=checkbox]:checked ~ .menu1{
+      display: block;
+  }
+  .navbar1_icon{
+      display: block;
+  } 
+}
+
+  .flex-container2{
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 1px 10px;
+  }
+  .radio{
+    margin-top: 30px;
+    background-color:blueviolet; /* Green */
+    border:none;
+    color:yellow;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .radio:hover{
+      background-color:aqua;
+  }
+  .img-fluid2{
+    width: 100%;
+    height: auto;
+border: 30px;
+    border-color: crimson;
+}
+.img-fluid2:hover{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.services3{
+  display: flex;
+  padding: 35px 35px;
+font-size: 30px;
+text-align: center;
+}
+.left{
+ 
+  padding: 10px;
+  flex: 50%;
+}
+
+.right{
+
+  padding: 10px;
+  flex: 50%;
+}
+@media (max-width:800px){
+
+    .Services {
+      flex-direction: column;
+    }
+
+  }
+
+.feathers{
+background-color: burlywood;
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 18px 18px;
+}
+.left feather{
+  padding: 25px;
+  flex: 50%;
+  margin-top: 60px;
+}
+
+.right feather{
+  padding: 10px;
+  flex: 50%;
+  
+}
+.feather img{
+height: 400px;
+width: auto;
+border-radius:10%;
+box-sizing: border-box;
+
+
+}
+.HEADING{
+  font-family:cursive;
+  color: rgb(197, 25, 151);
+
+}
+
+.right5{
+  padding: 5px 5px;
+  margin: 5px;
+  text-align: justify;
+height: 300%;
+width: 200%;
+
+
+}
+.flex-container6{
+  display: flex;
+  text-align: justify;
+  font-size: 20px;
+  background-color: violet;
+}
+.flex-container7{
+  display: flex;
+  text-align: justify;
+  font-size: 20px;
+  background-color: rgb(130, 238, 222);
+}
+
+
+
+.img2{
+  width: 100%;
+  height:auto ;
+  border: 10px solid purple;
+    border-radius: 53px;
+}
+.img3{
+  width: 100%;
+  height:auto ;
+  border: 10px solid red;
+    border-radius: 53px;
+
+}
+.radio4{
+  margin-top: 30px;
+    background-color:#49d806; /* Green */
+  
+    color:yellow;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+border-radius: 5px;
+}
+.beaks{
+  background-color:cornsilk;
+      display: flex;
+      text-align: justify;
+      font-size: 20px;
+      flex-direction: row;
+      margin-top: 40px;
+      padding: 18px 18px;
+}
+
+.new{
+
+  
+    width: 100%;
+    height:auto ;
+    border: 10px solid purple;
+      border-radius: 53px;
+  }
+  .imgbeaks{
+    width: 100%;
+    height: auto;
+    border-radius:53px ;
+    
+
+  }
+/**map***/
+.map{
+  margin: 15px 15px;
+}
+.central{
+
+  padding: 30px;
+  background-color: cadetblue;
+
+}
+.head1{
+text-align: center;
+color: #49d806;
+
+}
